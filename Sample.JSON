@@ -15,8 +15,8 @@
       },
       {
         "type":"Income",
-        "amount":"July",
-        "month":"300",
+        "amount":"300",
+        "month":"July",
         },
         {
           "type":"Expense",
