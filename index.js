@@ -8,19 +8,19 @@ var data = require("./Sample.json")
 var budget = [];
 
 for (i=0;i<5;i++){
-  if (${names[i].type} == "Income"){
-    budget.push(new Income(${names[i].amount}, ${names[i].month}, 2018, 0));
+  if (names[i].type == "Income"){
+    budget.push(new Income(names[i].amount, names[i].month, 2018, 0));
   }
   else{
-    budget.push(new Expense(${names[i].amount}, ${names[i].month}, 2018, 0, 0));
+    budget.push(new Expense(names[i].amount, names[i].month, 2018, 0, 0));
   }
 }
 for (i=0;i<5;i++){
-  if (${names[i].type} == "Income"){
-    budget.push(new Income(${names[i].amount}, ${names[i].month}, 2019, 0));
+  if (names[i].type == "Income"){
+    budget.push(new Income(names[i].amount, names[i].month, 2019, 0));
   }
   else{
-    budget.push(new Expense(${names[i].amount}, ${names[i].month}, 2019, 0, 0));
+    budget.push(new Expense(names[i].amount, names[i].month, 2019, 0, 0));
   }
 }
 
