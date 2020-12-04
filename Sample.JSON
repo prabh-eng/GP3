@@ -1,51 +1,51 @@
 [{
   "type":"Expense",
   "amount":"100",
-  "month":"January",
+  "month":"January"
   },
   {
     "type":"Income",
     "amount":"250",
-    "month":"February",
+    "month":"February"
     },
     {
       "type":"Expense",
       "amount":"150",
-      "month":"May",
+      "month":"May"
       },
       {
         "type":"Income",
         "amount":"300",
-        "month":"July",
+        "month":"July"
         },
         {
           "type":"Expense",
           "amount":"200",
-          "month":"September",
+          "month":"September"
           },
           {
             "type":"Income",
             "amount":"357",
-            "month":"February",
+            "month":"February"
             },
             {
               "type":"Expense",
               "amount":"564",
-              "month":"June",
+              "month":"June"
               },
               {
                 "type":"Income",
                 "amount":"700",
-                "month":"September",
+                "month":"September"
                 },
                 {
                   "type":"Expense",
                   "amount":"1000",
-                  "month":"November",
+                  "month":"November"
                   },
                   {
                     "type":"Income",
                     "amount":"1337",
-                    "month":"December",
+                    "month":"December"
                     }
             ]
