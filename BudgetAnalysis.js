@@ -1,6 +1,6 @@
-const bi = require(BudgetItem);
-const income = require(Income);
-const expense = require(Expense);
+const bi = require("./BudgetItem");
+const income = require("./Income");
+const expense = require("./Expense");
 
 class BudgetAnalysis
 {
