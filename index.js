@@ -30,4 +30,4 @@ for (i=0;i<budget.length;i++){
 }
 var yearBudget = [{year:2018,revenue:analysis.YearRev(2018)},{year:2019,revenue:analysis.YearRev(2019)}]
 var toWrite = JSON.stringify(yearBudget);
-fs.writeFile('Budget.json',toWrite, console.log('file written'));
+fs.writeFile('Budget.json',toWrite, ()=>{console.log('file written')});
