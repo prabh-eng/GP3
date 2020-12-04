@@ -9,7 +9,7 @@ class BudgetItem
             _amount = (amount > 0)?amount:0;
         };
         this.setMonth = function (month){
-            _month = (month > 0)?month:1;
+            _month = month;
         }
         this.setYear = function (year){
             _year = (year > 0)?year:0;
