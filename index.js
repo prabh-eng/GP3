@@ -1,30 +1,30 @@
 const fs = require('fs');
 const bi = require("./BudgetItem");
-const income = require("./Income");
-const expense = require("./Expense");
+const Income = require("./Income");
+const Expense = require("./Expense");
 const ba = require("./BudgetAnalysis");
 var data = require("./Sample.json")
 
 var budget = [];
 
 for (i=0;i<5;i++){
-  if (names[i].type == "Income"){
-    budget.push(new Income(names[i].amount, names[i].month, 2018, 0));
+  if (data[i].type == "Income"){
+    budget.push(new Income(data[i].amount, data[i].month, 2018, 0));
   }
   else{
-    budget.push(new Expense(names[i].amount, names[i].month, 2018, 0, 0));
+    budget.push(new Expense(data[i].amount, data[i].month, 2018, 0, 0));
   }
 }
 for (i=0;i<5;i++){
-  if (names[i].type == "Income"){
-    budget.push(new Income(names[i].amount, names[i].month, 2019, 0));
+  if (data[i].type == "Income"){
+    budget.push(new Income(data[i].amount, data[i].month, 2019, 0));
   }
   else{
-    budget.push(new Expense(names[i].amount, names[i].month, 2019, 0, 0));
+    budget.push(new Expense(data[i].amount, data[i].month, 2019, 0, 0));
   }
 }
 
-var analysis = new BudgetAnalysis;
+var analysis = new ba;
 for (i=0;i<budget.length;i++){
   analysis.addItem(budget[i]);
 }
