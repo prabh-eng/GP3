@@ -15,7 +15,7 @@ for (i=0;i<5;i++){
     budget.push(new Expense(data[i].amount, data[i].month, 2018, 0, 0));
   }
 }
-for (i=0;i<5;i++){
+for (i=5;i<10;i++){
   if (data[i].type == "Income"){
     budget.push(new Income(data[i].amount, data[i].month, 2019, 0));
   }

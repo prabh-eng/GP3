@@ -32,10 +32,10 @@ class BudgetAnalysis
     for (i=0; i<items.length;i++){
       if (items[i].getMonth() == month){
         if (items[i] instanceof Income){
-          sum += items[i].getAmount;
+          sum += Number(items[i].getAmount());
         }
         else{
-          sum -= items[i].getAmount;
+          sum -= Number(items[i].getAmount());
         }
       }
   }
@@ -46,10 +46,10 @@ this.YearRev = function (year) {
   for (i=0; i<items.length;i++){
     if (items[i].getYear() == year){
       if (items[i] instanceof Income){
-        sum += items[i].getAmount;
+        sum += Number(items[i].getAmount());
       }
       else{
-        sum -= items[i].getAmount;
+        sum -= Number(items[i].getAmount());
       }
     }
 }
