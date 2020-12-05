@@ -28,6 +28,10 @@ var analysis = new ba;
 for (i=0;i<budget.length;i++){
   analysis.addItem(budget[i]);
 }
-var yearBudget = [{year:2018,revenue:analysis.YearRev(2018)},{year:2019,revenue:analysis.YearRev(2019)}]
+var yearBudget = [{year:2018,revenue:String(analysis.YearRev(2018))},{year:2019,revenue:String(analysis.YearRev(2019))}]
 var toWrite = JSON.stringify(yearBudget);
-fs.writeFile('Budget.json',toWrite, ()=>{console.log('file written')});
+fs.writeFile('./Budget.json',toWrite, ()=>{console.log('file written')});
+fs.readFile('./Budget.json',(err, test) => {
+  if (err) throw err;
+  console.log(test);
+});
